@@ -12,25 +12,26 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+// import TwitterIcon from '../components/Icon/TwitterIcon'; 
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import portfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import portfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import portfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+import portfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import portfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+import portfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+import portfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+import portfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+import portfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+import portfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+import portfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
   ContactType,
+  ContactUrls,
   Hero,
   HomepageMeta,
   PortfolioItem,
@@ -44,8 +45,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Manuel Saleta',
+  description: "My resume website built with a react resume template",
 };
 
 /**
@@ -69,7 +70,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `Hello - Name is Manuel.`,
+  name: `Hello - The Name is Manuel.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -85,7 +86,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/src/assets/Manuel_Saleta_Resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -193,67 +194,67 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Project title 1',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage1,
+    image: portfolioImage1,
   },
   {
     title: 'Project title 2',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage2,
+    image: portfolioImage2,
   },
   {
     title: 'Project title 3',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage3,
+    image: portfolioImage3,
   },
   {
     title: 'Project title 4',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage4,
+    image: portfolioImage4,
   },
   {
     title: 'Project title 5',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage5,
+    image: portfolioImage5,
   },
   {
     title: 'Project title 6',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage6,
+    image: portfolioImage6,
   },
   {
     title: 'Project title 7',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage7,
+    image: portfolioImage7,
   },
   {
     title: 'Project title 8',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage8,
+    image: portfolioImage8,
   },
   {
     title: 'Project title 9',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage9,
+    image: portfolioImage9,
   },
   {
     title: 'Project title 10',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage10,
+    image: portfolioImage10,
   },
   {
     title: 'Project title 11',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage11,
+    image: portfolioImage11,
   },
 ];
 
@@ -328,29 +329,30 @@ export const testimonial: TestimonialSection = {
  * Contact section
  */
 
+
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Hey here is how to best get a hold of me!',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: ContactUrls.Email,
+      href: 'mailto:manny2206@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Miami, FL',
+      href: 'https://www.google.ca/maps/place/Miami,+FL/@25.7823843,-80.3118592,12z',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@manny_saleta',
+      href: 'https://www.instagram.com/manny_saleta/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'ManuelSaleta',
+      href: 'https://github.com/ManuelSaleta',
     },
   ],
 };
@@ -359,9 +361,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: ContactUrls.Github},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: ContactUrls.StackOverflow},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: ContactUrls.LinkedIn},
+  {label: 'Instagram', Icon: InstagramIcon, href: ContactUrls.Instagram},
+  // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
