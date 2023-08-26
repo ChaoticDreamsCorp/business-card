@@ -78,7 +78,7 @@ export const heroData: Hero = {
         at <strong className="text-stone-100">Bitstop Inc</strong> Helping build the leading Bitcoin ATM platform.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training at the gym, going with my dad to the track <strong className="text-stone-100">writing</strong>,
+        In my free time, you can catch me training at the gym, going with my dad to the track <strong className="text-stone-100">driving</strong>,
         Writing my next <strong className="text-stone-100">book</strong>, or traveling to{' '}
         <strong className="text-stone-100">the Dominican Republic</strong>.
       </p>
@@ -278,27 +278,86 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'March 2021 - Present',
+    location: 'Bitstop',
+    title: 'Software Engineer Lead',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul>
+        <li>
+          <p>
+            Worked with principal engineers to re-architect Python APIs providing real-time pricing data, replaced with .NET based APIs, coupled with Docker technology resulting in improved uptime and quarterly revenue by 200K.
+          </p>
+        </li>
+        <li>
+          <p>
+          Lead team to create an integration and developed a new infrastructure to migrate away from hosting Cryptos nodes, and integrate with cloud-based Crypto Currency providers. Such as BItGO API
+          </p>
+        </li>
+        <li>
+          <p>
+          Build RESTful C# APIs, to serve data to multiple JavaScript web-applications providing users with critical features, like ATM management, data exports, and API configurations.
+          </p>
+        </li>
+        <li>
+          <p>
+          Work with senior engineers to implement load-balancing pipelines using CircleCi and Kubernetes increasing APIs throughput, and services uptime.
+          </p>
+        </li>
+        <li>
+          <p>
+          Responsible for performing code reviews, adding integration-tests and user-manuals resulting in faster developer onboarding.
+          </p>
+        </li>
+      </ul>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: '2017 - 2021',
+    location: 'Amadeus Hospitality',
+    title: 'Software Engineer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul>
+        <li>
+          <p>
+          Worked within an agile team to create API integrations for PMS like Opera, ShijiPMS and our own products HotSOS, and HotSOS Mobile, leading to an increase in housekeeping staff efficiency by decreasing cleaning time between rooms.
+          </p>
+        </li>
+        <li>
+          <p>
+          Work to create their next-gen cloud based PMS system with technologies such as Angular2 for web UI, C# for API layer, SQL and Microsoft Azure. Was solely responsible for the Mobile development process which included Java, Kotlin, Objective-C for iOS.
+          </p>
+        </li>
+      </ul>
     ),
   },
+  {
+  date: '2017',
+  location: 'Assurant IT Solutions',
+  title: 'Software Engineer Intern',
+  content: (
+    <ul>
+      <li>
+        <p>
+        Worked with the VP of Technologies to rollout internal corporate-sponsored hackathons, creating web-apps to track all of the department POC initiatives such as Alexa Skills for interactive payment options.
+        </p>
+      </li>
+    </ul>
+  ),
+},
+{
+  date: '2015 - 2017',
+  location: 'Florida International University',
+  title: 'Programming Tutor',
+  content: (
+    <ul>
+      <li>
+        <p>
+        Worked with the computer science department to provide individualized study sessions for students seeking help with Database Management, web development, and programming I, II, III; leading to an increase of students passing finals.
+        </p>
+      </li>
+    </ul>
+  ),
+},
 ];
 
 /**

@@ -35,6 +35,7 @@ const ContactForm: FC = memo(() => {
       /**
        * This is a good starting point to wire up your form submission logic
        * */
+      //TODO: Wire up functionality to actually send emails
       console.log('Data to send: ', data);
     },
     [data],
