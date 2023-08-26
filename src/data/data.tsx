@@ -12,25 +12,26 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+// import TwitterIcon from '../components/Icon/TwitterIcon'; 
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import portfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import portfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import portfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+import portfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import portfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+import portfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+import portfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+import portfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+import portfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+import portfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+import portfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
   ContactType,
+  ContactUrls,
   Hero,
   HomepageMeta,
   PortfolioItem,
@@ -44,8 +45,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Manuel Saleta',
+  description: "My resume website built with a react resume template",
 };
 
 /**
@@ -69,24 +70,23 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Hello - The Name is Manuel.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Florida based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
+        at <strong className="text-stone-100">Bitstop Inc</strong> Helping build the leading Bitcoin ATM platform.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time, you can catch me training at the gym, going with my dad to the track <strong className="text-stone-100">driving</strong>,
+        Writing my next <strong className="text-stone-100">book</strong>, or traveling to{' '}
+        <strong className="text-stone-100">the Dominican Republic</strong>.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/src/assets/Manuel_Saleta_Resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,16 +104,15 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `A bit about me, I moved to Miami FL when I was 12, I am fluent in english and spanish, I have a computer science degree. 
+  Some of the technologies I am most comfortable with are C# .NET, ASP.NET, VueJS, and sometimes a bit of React. I am a backend specialist but moonlight as full-stack developer.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Miami, FL', Icon: MapIcon},
+    {label: 'Age', text: '31', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Dominican', Icon: FlagIcon},
+    {label: 'Interests', text: 'Reading, Driving cars, Exercising', Icon: SparklesIcon},
+    {label: 'Study', text: 'Florida International University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Bitstop, inc.', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -129,12 +128,8 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
-      },
-      {
         name: 'Spanish',
-        level: 3,
+        level: 10,
       },
     ],
   },
@@ -142,15 +137,15 @@ export const skills: SkillGroup[] = [
     name: 'Frontend development',
     skills: [
       {
-        name: 'React',
+        name: 'JavaScript',
         level: 9,
       },
       {
-        name: 'Typescript',
+        name: 'VueJs',
         level: 7,
       },
       {
-        name: 'GraphQL',
+        name: 'React',
         level: 6,
       },
     ],
@@ -159,15 +154,15 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
+        name: 'C#',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: '.NET',
+        level: 7,
       },
       {
-        name: 'Golang',
+        name: 'Blazor',
         level: 4,
       },
     ],
@@ -176,7 +171,7 @@ export const skills: SkillGroup[] = [
     name: 'Mobile development',
     skills: [
       {
-        name: 'React Native',
+        name: 'Kotlin',
         level: 9,
       },
       {
@@ -185,7 +180,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Swift',
-        level: 3,
+        level: 2,
       },
     ],
   },
@@ -199,67 +194,67 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Project title 1',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage1,
+    image: portfolioImage1,
   },
   {
     title: 'Project title 2',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage2,
+    image: portfolioImage2,
   },
   {
     title: 'Project title 3',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage3,
+    image: portfolioImage3,
   },
   {
     title: 'Project title 4',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage4,
+    image: portfolioImage4,
   },
   {
     title: 'Project title 5',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage5,
+    image: portfolioImage5,
   },
   {
     title: 'Project title 6',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage6,
+    image: portfolioImage6,
   },
   {
     title: 'Project title 7',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage7,
+    image: portfolioImage7,
   },
   {
     title: 'Project title 8',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage8,
+    image: portfolioImage8,
   },
   {
     title: 'Project title 9',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage9,
+    image: portfolioImage9,
   },
   {
     title: 'Project title 10',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage10,
+    image: portfolioImage10,
   },
   {
     title: 'Project title 11',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage11,
+    image: portfolioImage11,
   },
 ];
 
@@ -283,27 +278,86 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'March 2021 - Present',
+    location: 'Bitstop',
+    title: 'Software Engineer Lead',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul>
+        <li>
+          <p>
+            Worked with principal engineers to re-architect Python APIs providing real-time pricing data, replaced with .NET based APIs, coupled with Docker technology resulting in improved uptime and quarterly revenue by 200K.
+          </p>
+        </li>
+        <li>
+          <p>
+          Lead team to create an integration and developed a new infrastructure to migrate away from hosting Cryptos nodes, and integrate with cloud-based Crypto Currency providers. Such as BItGO API
+          </p>
+        </li>
+        <li>
+          <p>
+          Build RESTful C# APIs, to serve data to multiple JavaScript web-applications providing users with critical features, like ATM management, data exports, and API configurations.
+          </p>
+        </li>
+        <li>
+          <p>
+          Work with senior engineers to implement load-balancing pipelines using CircleCi and Kubernetes increasing APIs throughput, and services uptime.
+          </p>
+        </li>
+        <li>
+          <p>
+          Responsible for performing code reviews, adding integration-tests and user-manuals resulting in faster developer onboarding.
+          </p>
+        </li>
+      </ul>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: '2017 - 2021',
+    location: 'Amadeus Hospitality',
+    title: 'Software Engineer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul>
+        <li>
+          <p>
+          Worked within an agile team to create API integrations for PMS like Opera, ShijiPMS and our own products HotSOS, and HotSOS Mobile, leading to an increase in housekeeping staff efficiency by decreasing cleaning time between rooms.
+          </p>
+        </li>
+        <li>
+          <p>
+          Work to create their next-gen cloud based PMS system with technologies such as Angular2 for web UI, C# for API layer, SQL and Microsoft Azure. Was solely responsible for the Mobile development process which included Java, Kotlin, Objective-C for iOS.
+          </p>
+        </li>
+      </ul>
     ),
   },
+  {
+  date: '2017',
+  location: 'Assurant IT Solutions',
+  title: 'Software Engineer Intern',
+  content: (
+    <ul>
+      <li>
+        <p>
+        Worked with the VP of Technologies to rollout internal corporate-sponsored hackathons, creating web-apps to track all of the department POC initiatives such as Alexa Skills for interactive payment options.
+        </p>
+      </li>
+    </ul>
+  ),
+},
+{
+  date: '2015 - 2017',
+  location: 'Florida International University',
+  title: 'Programming Tutor',
+  content: (
+    <ul>
+      <li>
+        <p>
+        Worked with the computer science department to provide individualized study sessions for students seeking help with Database Management, web development, and programming I, II, III; leading to an increase of students passing finals.
+        </p>
+      </li>
+    </ul>
+  ),
+},
 ];
 
 /**
@@ -334,29 +388,30 @@ export const testimonial: TestimonialSection = {
  * Contact section
  */
 
+
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Hey here is how to best get a hold of me!',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: ContactUrls.Email,
+      href: 'mailto:manny2206@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Miami, FL',
+      href: 'https://www.google.ca/maps/place/Miami,+FL/@25.7823843,-80.3118592,12z',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@manny_saleta',
+      href: 'https://www.instagram.com/manny_saleta/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'ManuelSaleta',
+      href: 'https://github.com/ManuelSaleta',
     },
   ],
 };
@@ -365,9 +420,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: ContactUrls.Github},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: ContactUrls.StackOverflow},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: ContactUrls.LinkedIn},
+  {label: 'Instagram', Icon: InstagramIcon, href: ContactUrls.Instagram},
+  // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
