@@ -1,4 +1,5 @@
 // import {BoltIcon, ChevronUpIcon} from '@heroicons/react/24/solid';
+import ChevronUpIcon from '@heroicons/react/24/outline/ChevronUpIcon';
 import {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
