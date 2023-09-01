@@ -12,7 +12,7 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-// import TwitterIcon from '../components/Icon/TwitterIcon'; 
+// import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import portfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import portfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -46,7 +46,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Manuel Saleta',
-  description: "My resume website built with a react resume template",
+  description: 'My resume website built with a react resume template',
 };
 
 /**
@@ -78,8 +78,9 @@ export const heroData: Hero = {
         at <strong className="text-stone-100">Bitstop Inc</strong> Helping build the leading Bitcoin ATM platform.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time, you can catch me training at the gym, going with my dad to the track <strong className="text-stone-100">driving</strong>,
-        Writing my next <strong className="text-stone-100">book</strong>, or traveling to{' '}
+        In my free time, you can catch me training at the gym, going with my dad to the track{' '}
+        <strong className="text-stone-100">driving</strong>, Writing my next{' '}
+        <strong className="text-stone-100">book</strong>, or traveling to{' '}
         <strong className="text-stone-100">the Dominican Republic</strong>.
       </p>
     </>
@@ -193,67 +194,67 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Project title 1',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://manuelsaleta.com',
     image: portfolioImage1,
   },
   {
     title: 'Project title 2',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://manuelsaleta.com',
     image: portfolioImage2,
   },
   {
     title: 'Project title 3',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://manuelsaleta.com',
     image: portfolioImage3,
   },
   {
     title: 'Project title 4',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://manuelsaleta.com',
     image: portfolioImage4,
   },
   {
     title: 'Project title 5',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://manuelsaleta.com',
     image: portfolioImage5,
   },
   {
     title: 'Project title 6',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://manuelsaleta.com',
     image: portfolioImage6,
   },
   {
     title: 'Project title 7',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://manuelsaleta.com',
     image: portfolioImage7,
   },
   {
     title: 'Project title 8',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://manuelsaleta.com',
     image: portfolioImage8,
   },
   {
     title: 'Project title 9',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://manuelsaleta.com',
     image: portfolioImage9,
   },
   {
     title: 'Project title 10',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://manuelsaleta.com',
     image: portfolioImage10,
   },
   {
     title: 'Project title 11',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://manuelsaleta.com',
     image: portfolioImage11,
   },
 ];
@@ -285,27 +286,32 @@ export const experience: TimelineItem[] = [
       <ul>
         <li>
           <p>
-            Worked with principal engineers to re-architect Python APIs providing real-time pricing data, replaced with .NET based APIs, coupled with Docker technology resulting in improved uptime and quarterly revenue by 200K.
+            Worked with principal engineers to re-architect Python APIs providing real-time pricing data, replaced with
+            .NET based APIs, coupled with Docker technology resulting in improved uptime and quarterly revenue by 200K.
           </p>
         </li>
         <li>
           <p>
-          Lead team to create an integration and developed a new infrastructure to migrate away from hosting Cryptos nodes, and integrate with cloud-based Crypto Currency providers. Such as BItGO API
+            Lead team to create an integration and developed a new infrastructure to migrate away from hosting Cryptos
+            nodes, and integrate with cloud-based Crypto Currency providers. Such as BItGO API
           </p>
         </li>
         <li>
           <p>
-          Build RESTful C# APIs, to serve data to multiple JavaScript web-applications providing users with critical features, like ATM management, data exports, and API configurations.
+            Build RESTful C# APIs, to serve data to multiple JavaScript web-applications providing users with critical
+            features, like ATM management, data exports, and API configurations.
           </p>
         </li>
         <li>
           <p>
-          Work with senior engineers to implement load-balancing pipelines using CircleCi and Kubernetes increasing APIs throughput, and services uptime.
+            Work with senior engineers to implement load-balancing pipelines using CircleCi and Kubernetes increasing
+            APIs throughput, and services uptime.
           </p>
         </li>
         <li>
           <p>
-          Responsible for performing code reviews, adding integration-tests and user-manuals resulting in faster developer onboarding.
+            Responsible for performing code reviews, adding integration-tests and user-manuals resulting in faster
+            developer onboarding.
           </p>
         </li>
       </ul>
@@ -319,45 +325,52 @@ export const experience: TimelineItem[] = [
       <ul>
         <li>
           <p>
-          Worked within an agile team to create API integrations for PMS like Opera, ShijiPMS and our own products HotSOS, and HotSOS Mobile, leading to an increase in housekeeping staff efficiency by decreasing cleaning time between rooms.
+            Worked within an agile team to create API integrations for PMS like Opera, ShijiPMS and our own products
+            HotSOS, and HotSOS Mobile, leading to an increase in housekeeping staff efficiency by decreasing cleaning
+            time between rooms.
           </p>
         </li>
         <li>
           <p>
-          Work to create their next-gen cloud based PMS system with technologies such as Angular2 for web UI, C# for API layer, SQL and Microsoft Azure. Was solely responsible for the Mobile development process which included Java, Kotlin, Objective-C for iOS.
+            Work to create their next-gen cloud based PMS system with technologies such as Angular2 for web UI, C# for
+            API layer, SQL and Microsoft Azure. Was solely responsible for the Mobile development process which included
+            Java, Kotlin, Objective-C for iOS.
           </p>
         </li>
       </ul>
     ),
   },
   {
-  date: '2017',
-  location: 'Assurant IT Solutions',
-  title: 'Software Engineer Intern',
-  content: (
-    <ul>
-      <li>
-        <p>
-        Worked with the VP of Technologies to rollout internal corporate-sponsored hackathons, creating web-apps to track all of the department POC initiatives such as Alexa Skills for interactive payment options.
-        </p>
-      </li>
-    </ul>
-  ),
-},
-{
-  date: '2015 - 2017',
-  location: 'Florida International University',
-  title: 'Programming Tutor',
-  content: (
-    <ul>
-      <li>
-        <p>
-        Worked with the computer science department to provide individualized study sessions for students seeking help with Database Management, web development, and programming I, II, III; leading to an increase of students passing finals.
-        </p>
-      </li>
-    </ul>
-  ),
-},
+    date: '2017',
+    location: 'Assurant IT Solutions',
+    title: 'Software Engineer Intern',
+    content: (
+      <ul>
+        <li>
+          <p>
+            Worked with the VP of Technologies to rollout internal corporate-sponsored hackathons, creating web-apps to
+            track all of the department POC initiatives such as Alexa Skills for interactive payment options.
+          </p>
+        </li>
+      </ul>
+    ),
+  },
+  {
+    date: '2015 - 2017',
+    location: 'Florida International University',
+    title: 'Programming Tutor',
+    content: (
+      <ul>
+        <li>
+          <p>
+            Worked with the computer science department to provide individualized study sessions for students seeking
+            help with Database Management, web development, and programming I, II, III; leading to an increase of
+            students passing finals.
+          </p>
+        </li>
+      </ul>
+    ),
+  },
 ];
 
 /**
@@ -387,7 +400,6 @@ export const testimonial: TestimonialSection = {
 /**
  * Contact section
  */
-
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
