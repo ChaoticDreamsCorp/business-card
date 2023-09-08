@@ -6,7 +6,7 @@
 # Help command
 help:
 	@echo "Available targets:"
-	@echo "  run-dev    : Run 'nvm use 18', 'yarn install', and 'yarn dev'"
+	@echo "  dev    : Run 'nvm use 18', 'yarn install', and 'yarn dev'"
 
 
 	
@@ -22,3 +22,6 @@ dev:
 # kill the node process running on 3000
 kill:
     lsof -ti :3000 | xargs kill
+
+kill.port:
+    kill $$(lsof -t -i :3000)
