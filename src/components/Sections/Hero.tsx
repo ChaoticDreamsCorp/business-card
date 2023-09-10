@@ -9,31 +9,7 @@ import Section from '../Layout/Section';
 import Socials from '../Socials';
 
 const Hero: FC = memo(() => {
-  const {imageSrc, name, description, actions} = heroData;
-
-  const handleDownload = async () => {
-    try {
-      // Make a GET request to the API route
-      const response = await fetch('/src/server/apis/downloads');
-      if (response.ok) {
-        // Trigger the download on the client side
-        const blob = await response.blob();
-        const url = window.URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'your-pdf-file.pdf';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-      } else {
-        // Handle error
-        console.error('Error downloading PDF');
-      }
-    } catch (error) {
-      // Handle fetch error
-      console.error('Fetch error:', error);
-    }
-  };
+  const {imageSrc, name, description} = heroData;
 
   return (
     <>
