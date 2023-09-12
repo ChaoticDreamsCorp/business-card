@@ -1,5 +1,5 @@
 import {ChevronDownIcon} from '@heroicons/react/24/outline';
-import SendIcon from '@mui/icons-material/Send';
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import {Button} from '@mui/material';
 import Image from 'next/image';
 import {FC, memo} from 'react';
@@ -47,7 +47,7 @@ const Hero: FC = memo(() => {
                   color="warning"
                   download
                   // eslint-disable-next-line react-memo/require-usememo
-                  endIcon={<SendIcon />}
+                  endIcon={<CloudDownloadIcon />}
                   href="/static/manuel_saleta_resume.pdf"
                   variant="contained">
                   Get Resume
