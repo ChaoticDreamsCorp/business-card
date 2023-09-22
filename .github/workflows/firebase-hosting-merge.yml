@@ -18,3 +18,5 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BUSINESS_CARD_D1D9F }}'
           channelId: live
           projectId: business-card-d1d9f
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
