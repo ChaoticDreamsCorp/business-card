@@ -15,6 +15,8 @@ import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import portfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import portfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+import portfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import portfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import portfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import portfolioImage4 from '../images/portfolio/portfolio-4.jpg';
@@ -23,8 +25,6 @@ import portfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import portfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import portfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import portfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import portfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import portfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -192,26 +192,26 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
+    title: 'Shell Hacks',
+    description: 'ShellHacks Web-development workshop 2023',
     url: 'https://manuelsaleta.com',
     image: portfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
+    title: 'Shell Hacks',
+    description: 'ShellHacks Web-development workshop 2023',
     url: 'https://manuelsaleta.com',
     image: portfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
+    title: 'QRME - Android',
+    description: 'QR Generating app using Flutter',
     url: 'https://manuelsaleta.com',
     image: portfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
+    title: 'Bitcoin Price App',
+    description: 'Another React Project for Bitcoin Data',
     url: 'https://manuelsaleta.com',
     image: portfolioImage4,
   },
