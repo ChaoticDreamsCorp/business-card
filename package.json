@@ -1,8 +1,7 @@
 {
-  "name": "react-resume-template",
+  "name": "business-card",
   "version": "2.0.0",
   "private": true,
-  "license": "MIT",
   "scripts": {
     "build": "yarn compile && yarn next build",
     "clean": "rm -rf build-tsc .next",
@@ -12,6 +11,8 @@
     "start": "yarn next start",
     "sitemap": "yarn next-sitemap"
   },
+  "author": "Manuel Saleta",
+  "license": "MIT",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
