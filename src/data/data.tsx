@@ -143,11 +143,11 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'VueJs',
-        level: 7,
+        level: 5,
       },
       {
         name: 'React',
-        level: 6,
+        level: 8,
       },
     ],
   },
@@ -160,7 +160,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: '.NET',
-        level: 7,
+        level: 8,
       },
       {
         name: 'Blazor',
@@ -192,26 +192,26 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
+    title: 'Shell Hacks',
+    description: 'ShellHacks Web-development workshop 2023',
     url: 'https://manuelsaleta.com',
     image: portfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
+    title: 'Shell Hacks',
+    description: 'ShellHacks Web-development workshop 2023',
     url: 'https://manuelsaleta.com',
     image: portfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
+    title: 'QRME - Android',
+    description: 'QR Generating app using Flutter',
     url: 'https://manuelsaleta.com',
     image: portfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
+    title: 'Bitcoin Price App',
+    description: 'Another React Project for Bitcoin Data',
     url: 'https://manuelsaleta.com',
     image: portfolioImage4,
   },
@@ -267,9 +267,12 @@ export const education: TimelineItem[] = [
     date: 'April 2017',
     location: 'Florida International University',
     title: 'Computer Science - Application Development',
-    content: <p>As a student I focused all my electives on core programming classes, such as database design, application development
-      info sec, mobile development, web development and unix programming. 
-    </p>,
+    content: (
+      <p>
+        As a student I focused all my electives on core programming classes, such as database design, application
+        development info sec, mobile development, web development and unix programming.
+      </p>
+    ),
   },
 ];
 

@@ -18,8 +18,6 @@ export default function Document() {
       <body className="bg-black">
         <Main />
         <NextScript />
-
-        
       </body>
     </Html>
   );

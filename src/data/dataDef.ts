@@ -129,18 +129,16 @@ export const ContactType = {
 
 export type ContactType = (typeof ContactType)[keyof typeof ContactType];
 
-export const ContactUrls = 
-{
-  Github: "https://github.com/ManuelSaleta",
+export const ContactUrls = {
+  Github: 'https://github.com/ManuelSaleta',
   Email: 'manny2206@gmail.com',
-  Instagram: "https://www.instagram.com/manny_saleta/",
-  LinkedIn: "https://www.linkedin.com/in/manuel-saleta-a93736a2/",
-  StackOverflow: "https://stackoverflow.com/users/9063696/gmanz",
-  Phone: "305-773-8214"
+  Instagram: 'https://www.instagram.com/manny_saleta/',
+  LinkedIn: 'https://www.linkedin.com/in/manuel-saleta-a93736a2/',
+  StackOverflow: 'https://stackoverflow.com/users/9063696/gmanz',
+  Phone: '305-773-8214',
 } as const;
 
 export type ContactUrls = (typeof ContactUrls)[keyof typeof ContactUrls];
-
 
 export interface ContactItem {
   type: ContactType;
